@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void) {
 	int a = 1;
@@ -25,7 +26,7 @@ int main(void) {
 	printf("%c", mjyeol[11]);*/
 
 	printf("¹®ÀÚ¿­ : ");
-	for (int i = 0; i < 12; i++) {
+	for (int i = 0; i < strlen(mjyeol); i++) {
 		printf("%c", mjyeol[i]);
 	}
 
