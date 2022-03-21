@@ -11,7 +11,7 @@ int main(void) {
 	printf("정수 : %d, 문자 : %c, 더블 : %.2lf, 플롯 : %f\n", a, munja, sosu, sosu1);
 	printf("문자열 : %s\n", mjyeol);
 	
-	printf("%c", mjyeol[0]);
+	/*printf("%c", mjyeol[0]);
 	printf("%c", mjyeol[1]);
 	printf("%c", mjyeol[2]);
 	printf("%c", mjyeol[3]);
@@ -22,7 +22,14 @@ int main(void) {
 	printf("%c", mjyeol[8]);
 	printf("%c", mjyeol[9]);
 	printf("%c", mjyeol[10]);
-	printf("%c", mjyeol[11]);
+	printf("%c", mjyeol[11]);*/
+
+	printf("문자열 : ");
+	for (int i = 0; i < 12; i++) {
+		printf("%c", mjyeol[i]);
+	}
+
+	
 
 
 
