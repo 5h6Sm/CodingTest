@@ -3,7 +3,7 @@
 //최대값은 15(arr[9])
 int arr[10] = { 5, 9, 15, 6, 2, 3, 4, 8, 9 };
 int temp = -1, idx = 99;
-/*
+
 int f() {
 	int n = 0;
 	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++) {
@@ -14,13 +14,24 @@ int f() {
 	}
 	return n;
 }
-*/
+
+int f2() {
+	int n = 0;
+	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++) {
+		if (arr[i] > temp) {
+			temp = arr[i];
+		}
+	}
+	return temp;
+}
+
 
 int main(void) {
 	
-	//printf("%d\n", f());
+	printf("인덱스 번호는 %d, ", f());
+	printf("최대값은 %d 입니다.", f2());
 	//배열 요소 중 최대값과 그에 해당하는 idx값을 구하시오
-	if (arr[0] > temp) {
+	/*if (arr[0] > temp) {
 		temp = arr[0];
 		idx = 0;
 	}
@@ -69,7 +80,7 @@ int main(void) {
 	}
 		
 
-	printf("%d", idx);
+	printf("%d", idx);*/
 	return 0;
 
 }
