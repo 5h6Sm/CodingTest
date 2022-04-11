@@ -1,32 +1,25 @@
 #include <stdio.h>
 
-//최대값은 15(arr[9])
-int arr[10] = { 5, 9, 15, 6, 2, 3, 4, 8, 9 };
-int temp = -1, idx = 99;
+//배열 요소 중 최대값과 그에 해당하는 idx값을 구하시오
+void getMax(int* arr, int length) {
+	int temp = -1, idx = 99;
 
-/*int f() {
-	int n = 0;
-	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++) {
-		if (arr[i]>temp) {
-			temp = arr[i];
-			n = i;
-		}
-	}
-	return n;
-}*/
-
-
-int main(void) {
-	
-	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++) {
+	for (int i = 0; i < length; i++) {
 		if (arr[i] > temp) {
 			temp = arr[i];
 			idx = i;
 		}
 	}
-	printf("인덱스 번호는 %d, ",idx);
+	printf("인덱스 번호는 %d, ", idx);
 	printf("최대값은 %d 입니다.", temp);
-	//배열 요소 중 최대값과 그에 해당하는 idx값을 구하시오
+}
+
+
+int main(void) {
+	//최대값은 15(arr[9])
+	int arr[10] = { 5, 9, 15, 6, 2, 3, 4, 8, 9 };
+	getMax(arr, sizeof(arr)/sizeof(arr[0]));
+	
 	/*if (arr[0] > temp) {
 		temp = arr[0];
 		idx = 0;
