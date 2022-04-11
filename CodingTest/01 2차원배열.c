@@ -17,10 +17,9 @@ int main(void) {
 	}*/
 
 	for (int i = 0; i < 3; i++) {
-		printf("%3d ", arr[i][0]);
-		printf("%3d ", arr[i][1]);
-		printf("%3d ", arr[i][2]);
-		printf("%3d ", arr[i][3]);
+		for (int j = 0; j < 4; j++) {
+			printf("%3d ", arr[i][j]);
+		}
 		printf("\n");
 	}
 	/*
