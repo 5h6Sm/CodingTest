@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 //배열 요소 중 최대값과 그에 해당하는 idx값을 구하시오
-void getMax(int* arr, int length) {
-	int temp = -1, idx = 99;
 
+void getMax(int* arr, int length) {
+	int temp = -1, idx = 99; //max
 	for (int i = 0; i < length; i++) {
 		if (arr[i] > temp) {
 			temp = arr[i];
@@ -16,9 +16,24 @@ void getMax(int* arr, int length) {
 
 
 int main(void) {
-	//최대값은 15(arr[9])
 	int arr[10] = { 5, 9, 15, 6, 2, 3, 4, 8, 9 };
+	
+	int temp2 = 99, idx2 = 99; //비교대상, 인덱스 값
+	//최대값은 15(arr[9])
+
 	getMax(arr, sizeof(arr)/sizeof(arr[0]));
+	printf("\n");
+	
+	//함수 쓰지 말고 최소값을 구해보자	
+	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++) {
+		if (arr[i] < temp2) {
+			temp2 = arr[i];
+			idx2 = i;
+		}
+	}
+	printf("인덱스 번호는 %d, ", idx2);
+	printf("최소값은 %d 입니다.", temp2);
+
 	
 	/*if (arr[0] > temp) {
 		temp = arr[0];
