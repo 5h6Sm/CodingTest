@@ -39,20 +39,20 @@ int main(void) {
 	}*/
 
 	char str[30] = "Hello";
-	int length = 0;
-
+	
+	/*int length = 0;
 	for (int i = 0; i < 30; i++) {
 		if (str[i] != '\0')
 			length++;
 	}
-	printf("길이는 %d", length);
+	printf("길이는 %d", length);*/
 
-	//int count = 0;
-	//for (int i = 0; str[i] != '\0'; i++) {
-	//	printf("%c", str[i]);
-	//	count++;
-	//}
-	//printf("\n%d\n", count);
+	int count = 0;
+	for (int i = 0; str[i] != '\0'; i++) {
+		printf("%c", str[i]);
+		count++;
+	}
+	printf("\n%d\n", count);
 
 	//int j = 0;
 	//for (;;) {
