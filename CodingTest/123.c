@@ -11,13 +11,11 @@
 //[5] : "XXL" 사이즈 신청자 수
 
 int* solution(char* shirt_size[], int shirt_size_len) {
-
-
 	int arr[6] = { 0,0,0,0,0,0 };
 	int* answer = arr;
-
+	
 	// shirt_size에 있는 모든 원소를 뒤져서 counting
-
+	
 	for (int i = 0; i < shirt_size_len; i++) {
 		// shirt_size[i]가 "XS"면 answer[0]++
 		if (strcmp(shirt_size[i], "XS") == 0)
@@ -32,12 +30,12 @@ int* solution(char* shirt_size[], int shirt_size_len) {
 		else if (strcmp(shirt_size[i], "XS") == 0)
 			answer[0]++;
 		// shirt_size[i]가 "XL"면 answer[4]++
-		elseif(strcmp(shirt_size[i], "XS") == 0)
+		elseif (strcmp(shirt_size[i], "XS") == 0)
 			answer[0]++;
 		// shirt_size[i]가 "XXL"면 answer[5]++
 
 	}
-
+	
 	return answer;
 }]
 
