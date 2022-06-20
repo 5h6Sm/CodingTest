@@ -5,8 +5,6 @@ char my_strcat(char* str1, char* str2) {
 	int str1_length = strlen(str1);
 	int str2_length = strlen(str2);
 
-
-
 	/*for (int i = str1_length; i < str1_length + str2_length; i++) {
 		str1[i] = str2[i - str2_length];
 	}*/
