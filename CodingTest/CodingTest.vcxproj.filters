@@ -15,7 +15,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1학기 수행평가 대비.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="02 배열활용연습.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="03 중간점검 - 이차원배열 출력.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="04 문자열 복사하기.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05 문자열 비교하기.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="06 문자열 덧붙이기.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00 출력함수.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="01 2차원배열.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="123.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
