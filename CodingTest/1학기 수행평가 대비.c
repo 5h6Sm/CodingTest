@@ -23,5 +23,23 @@ int main(void) {
 		printf("양서영입니다. \n");
 	else printf("양서영이 아닙니다.\n");
 
+	//문제1 문자열의 길이 구하기
+	char str2[30] = "samgyetang";
+	int length2 = strlen(str2);
+	printf("삼계탕의 길이는 %d\n", length2);
+	
+	//문제2 copy_str2에 "iceshu" 집어넣기(복사하기)
+	char copy_str2[30];
+	strcpy(copy_str2, "iceshu");
+	printf("복사한 문자열은 %s \n", copy_str2);
 
+	//문제3 copy_str2에 "delicious" 덧붙이기
+	strcat(copy_str2, "delicious");
+	printf("덧붙인 문자열은 %s \n", copy_str2);
+
+	//문제4 "BMW"와 "benz"의 두 문자열이 같은 다른지를 판별
+	if (strcmp("BMW", "benz") == 0)
+		printf("두 문자열은 같습니다.\n");
+	else printf("두 문자열은 같지않습니다.\n");
+	
 }
