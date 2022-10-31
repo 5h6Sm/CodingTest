@@ -15,10 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="문제4.c">
+    <ClCompile Include="02-01.c">
       <Filter>헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="동적할당 정적할당.c">
+    <ClCompile Include="02-02.c">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="02-03.c">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="02-04.c">
       <Filter>헤더 파일</Filter>
     </ClCompile>
   </ItemGroup>

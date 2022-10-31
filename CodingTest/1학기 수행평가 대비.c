@@ -25,6 +25,7 @@ int main(void) {
 
 	//문제1 문자열의 길이 구하기
 	char str2[30] = "samgyetang";
+
 	int length2 = strlen(str2);
 	printf("삼계탕의 길이는 %d\n", length2);
 	
@@ -41,5 +42,5 @@ int main(void) {
 	if (strcmp("BMW", "benz") == 0)
 		printf("두 문자열은 같습니다.\n");
 	else printf("두 문자열은 같지않습니다.\n");
-	
+
 }
