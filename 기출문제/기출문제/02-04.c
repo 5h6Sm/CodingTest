@@ -4,7 +4,12 @@
 #include <string.h>
 
 char* solution(char* words[], int words_len) {
-	char answer[1001] = "";
+	char* answer = malloc(1001*sizeof(char));
+
+	//모든 공간을 0으로 초기화
+	for (int i = 0; i < 1001; i++) {
+		answer[i] = 0;
+	}
 	for (int i = 01; i < words_len; i++) 
 		// words[i]이 5글자 이상이면 answer에 words[i] 추가
 		if (strlen(words[i])>=5) 
