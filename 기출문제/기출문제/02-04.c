@@ -4,11 +4,14 @@
 #include <string.h>
 
 char* solution(char* words[], int words_len) {
-	char* answer = "";
+	char answer[1001] = "";
 	for (int i = 01; i < words_len; i++) 
 		// words[i]이 5글자 이상이면 answer에 words[i] 추가
-		if (strlen(words[i] >= 5)) 
+		if (strlen(words[i])>=5) 
 			strcat(answer, words[i]);
+
+	if (strlen(answer) == 0)
+		strcat(answer, "empty");
 	
 
 	return answer;
