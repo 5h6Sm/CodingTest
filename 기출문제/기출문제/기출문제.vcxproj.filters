@@ -42,5 +42,11 @@
     <ClCompile Include="02-09.c">
       <Filter>헤더 파일</Filter>
     </ClCompile>
+    <ClCompile Include="02-10.c">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="03-02.c">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
